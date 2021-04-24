@@ -16,13 +16,13 @@
           <tbody>
             <dl v-for="(dict, key) in json" v-bind:key="key">
               <dt class="Link--primary">
-                <a :href="'https://github.com/ppy/osu-wiki/blob/master/'+dict.zh.path" target="_blank">
+                <a :href="'https://github.com/ppy/osu-wiki/blob/master/'+dict.zh.path" target="_blank" rel="noopener noreferrer">
                   {{dict.zh.path}}
                 </a>
               </dt>
               <ul>
                 <li class="Link--primary">
-                  <a :href="'https://github.com/ppy/osu-wiki/blob/master/'+dict.zh.path" target="_blank">
+                  <a :href="'https://github.com/ppy/osu-wiki/blob/master/'+dict.zh.path" target="_blank" rel="noopener noreferrer">
                   <img class="flag flag--left" src="./assets/CN.png">
                   zh.md
                   </a>
@@ -31,7 +31,7 @@
                   latest commit
                 </span>
                 <span class="commit commit_sha">
-                  <a :href="'https://github.com/ppy/osu-wiki/commit/'+dict.zh.sha" target="_blank">
+                  <a :href="'https://github.com/ppy/osu-wiki/commit/'+dict.zh.sha" target="_blank" rel="noopener noreferrer">
                     {{dict.zh.sha}}
                   </a>
                 </span>
@@ -41,7 +41,7 @@
               </ul>
               <ul>
                 <li class="Link--primary">
-                  <a :href="'https://github.com/ppy/osu-wiki/blob/master/'+dict.en.path" target="_blank">
+                  <a :href="'https://github.com/ppy/osu-wiki/blob/master/'+dict.en.path" target="_blank" rel="noopener noreferrer">
                   <img class="flag flag--left" src="./assets/GB.png">
                   en.md
                   </a>
@@ -50,7 +50,7 @@
                   latest commit 
                 </span>
                 <span class="commit commit_sha">
-                  <a :href="'https://github.com/ppy/osu-wiki/commit/'+dict.en.sha" target="_blank">
+                  <a :href="'https://github.com/ppy/osu-wiki/commit/'+dict.en.sha" target="_blank" rel="noopener noreferrer">
                   {{dict.en.sha}}
                   </a>
                 </span>
